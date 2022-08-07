@@ -278,8 +278,16 @@ This is the schematic as per the connections in the above module.
 ![94d6174a-bcb0-4cad-bef6-a0537ef32ef1](https://user-images.githubusercontent.com/104454253/166108402-f96b7fa9-3d8f-4f05-b4cb-89e443e43718.jpg)
 
 However, the yosys synthesizer generates the following schematic instead of the above one and with in the submodules, the connections are made
+```
+$ yosys
+yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+yosys> read_verilog multiple_modules.v
+yosys> synth -top multiple_modules
+yosys> show multiple_modules 
 
-![lab5](https://user-images.githubusercontent.com/104454253/166108721-0e13ddc4-6c31-45bb-b735-560646e7497e.JPG)
+```
+
+<img width="802" alt="image" src="https://user-images.githubusercontent.com/110079648/183289083-9b6f9bec-f3aa-4a73-bc97-41d01244382d.png">
 
 The synthesizer considers the module hierarcy and does the mapping accordting to instantiation. Here is the hierarchical netlist code for the  multiple_modules:
 
