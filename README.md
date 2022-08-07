@@ -905,15 +905,15 @@ Blocking statements execute the statemetns in the order they are written inside 
 	
 **Simulation**
 
-![gtkternary_mux](https://user-images.githubusercontent.com/104454253/166204654-3946e42a-3e48-478e-9144-37b7eeadc8cd.JPG)
+<img width="1210" alt="image" src="https://user-images.githubusercontent.com/110079648/183302033-64b5795e-c317-4315-ae29-578529b0d526.png">
 
 **Synthesis**
 
-![synthesisternary_mux](https://user-images.githubusercontent.com/104454253/166204718-12da283d-277d-4d72-8c02-93521cda3abe.JPG)
+<img width="1318" alt="image" src="https://user-images.githubusercontent.com/110079648/183302083-a1f9ee6b-8434-4f93-b27a-c0903a38202a.png">
 
 **Netlist Simulation**
 
-![simGLSternary_mux](https://user-images.githubusercontent.com/104454253/166204813-8022428f-9848-4bf2-9c22-9dc730b1305b.JPG)
+<img width="1401" alt="image" src="https://user-images.githubusercontent.com/110079648/183302375-e77c79d7-1eb0-44d3-ba3e-b6b508e3735f.png">
 
 # Example-2
 
@@ -929,15 +929,15 @@ Blocking statements execute the statemetns in the order they are written inside 
 
 **Simulation**
 
-![simbad_mux](https://user-images.githubusercontent.com/104454253/166204842-37f6ce2e-6e3f-40f4-8565-291621584acf.JPG)
+<img width="1370" alt="image" src="https://user-images.githubusercontent.com/110079648/183302435-957b52f3-e26c-46cf-842d-4865a6c56789.png">
 
 **Synthesis**
 
-![synthbad_mux](https://user-images.githubusercontent.com/104454253/166205989-ebd33255-d75a-4f1e-a126-bd0da6ea3c0f.JPG)
+<img width="1378" alt="image" src="https://user-images.githubusercontent.com/110079648/183302481-332d58bc-4ddc-4444-874f-cbf541054cc8.png">
 
 **Netlist Simulation**
 
-![simbadmuxnetlist](https://user-images.githubusercontent.com/104454253/166204853-14865a7a-2b9a-4af0-b552-4a1a647ad56c.JPG)
+<img width="1389" alt="image" src="https://user-images.githubusercontent.com/110079648/183302582-b8f61e11-717a-4ebb-a679-525381e1b578.png">
 
 **MISMATCH**<br />
 
@@ -957,15 +957,15 @@ Blocking statements execute the statemetns in the order they are written inside 
 	
 **Simulation**
 
-![gtkwavegood_mux](https://user-images.githubusercontent.com/104454253/166206079-3b4799e8-c110-409a-8630-6bba41d4e52b.JPG)
+<img width="1383" alt="image" src="https://user-images.githubusercontent.com/110079648/183302664-efa38fa4-647a-4b56-be9c-40caf9d45785.png">
 
 **Synthesis**
 
-![synthgood_mux](https://user-images.githubusercontent.com/104454253/166206100-6ac5d20c-89ec-48ba-bfb8-20113468e350.JPG)
+<img width="1402" alt="image" src="https://user-images.githubusercontent.com/110079648/183302727-ce33a8c4-97af-4a21-97ac-fac2eb898919.png">
 
 **Netlist Simulation**
 
-![gtkgood_muxnetlist](https://user-images.githubusercontent.com/104454253/166206120-d45f4a7e-9f9a-4392-ba28-dcdd45777ded.JPG)
+<img width="1396" alt="image" src="https://user-images.githubusercontent.com/110079648/183302799-4f0a3402-e9f7-4b06-ad18-41af34f301ac.png">
 
 ## 5.3 Lab- Synthesis simulation mismatch blocking statement
 
@@ -984,15 +984,15 @@ Here the output is depending on the past value of x which is dependednt on a and
 
 **Simulation**
 
-![gtkwaveblockingcaveat](https://user-images.githubusercontent.com/104454253/166208218-70206c9a-ceb7-436c-8119-9da2eb2d166f.JPG)
+!<img width="1386" alt="image" src="https://user-images.githubusercontent.com/110079648/183302865-3c28005c-fd9c-45e6-a3cc-62ba220622fd.png">
 
 **Synthesis**
 
-![synthesisblocking_caveat](https://user-images.githubusercontent.com/104454253/166208245-a5b60e7d-68f3-41bf-950e-bd86632ccbae.JPG)
+<img width="1398" alt="image" src="https://user-images.githubusercontent.com/110079648/183302910-fe4cc852-56bb-4666-9ec6-0a2a4523f14a.png">
 
 **Netlist Simulation**
 
-![gtkwaveblocking_caveat_netlist](https://user-images.githubusercontent.com/104454253/166208291-d7e20448-3617-4001-8f31-f9f91cc0cb95.JPG)
+<img width="1397" alt="image" src="https://user-images.githubusercontent.com/110079648/183303006-ac1cb710-6660-4a26-9c81-17f412fca5d6.png">
 
 **MISMATCH**
 
