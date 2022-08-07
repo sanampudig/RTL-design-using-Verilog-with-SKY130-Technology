@@ -1,5 +1,4 @@
 # RTL-design-using-Verilog-with-SKY130-Technology
-# RTL-design-using-Verilog-with-SKY130-Technology
 ![Verilog-flyer](https://user-images.githubusercontent.com/104454253/166084640-128e6351-1739-4b38-a3ce-76459da921b5.png)
 # Table of contents
  - [1. Introduction](#1-Introduction)
@@ -208,7 +207,7 @@ Below is the snippet showing the synthesis results and synthesized circuit for m
 
 **Netlist Code**
 
-![yosys4](https://user-images.githubusercontent.com/104454253/166101176-50cf9b44-3ca7-4d1c-bb2e-392498d82ddd.JPG)
+<img width="1294" alt="image" src="https://user-images.githubusercontent.com/110079648/183299489-ca1014c2-40c8-460a-8877-189e71141c8b.png">
 
 **Simplified netlist code**: This code consisits of additional switch. To further simplify, we use below command
 <img width="1359" alt="image" src="https://user-images.githubusercontent.com/110079648/183277276-3fd1c8a7-59f8-4997-ab14-82a359ebfe40.png">
