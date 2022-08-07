@@ -115,7 +115,6 @@ Here is the code :<br />
 	always #55 i1 = ~i1;
 	endmodule**
 
-![goodmuxgtkwaveCapture](https://user-images.githubusercontent.com/104454253/166117453-7f4918e9-acb4-4ad5-b35a-0933c8578312.JPG)
 
 
 ## 2.3 Introduction to Yosys synthesizer
@@ -214,6 +213,22 @@ Below is the snippet showing the synthesis results and synthesized circuit for m
 **Simplified netlist code**: This code consisits of additional switch. To further simplify, we use below command
 <img width="1359" alt="image" src="https://user-images.githubusercontent.com/110079648/183277276-3fd1c8a7-59f8-4997-ab14-82a359ebfe40.png">
 
+```
+$ yosys
+yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+yosys> read_verilog good_mux.v 
+yosys> synth -top good_mux 
+yosys> abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> show
+
+yosys> write_verilog good_mux_netlist.v 
+yosys> !gvim good_mux_netlist.v 
+
+yosys> write_verilog -noattr good_mux_netlist.v
+yosys> !gvim good_mux_netlist.v 
+
+```
+
 # 3. DAY2-Timing libs, hierarchical, flat synthesis, efficient flop coding styles
 
 ## 3.1 Introduction to timing .libs
@@ -225,11 +240,11 @@ This lab guides us through the .lib files where we have all the gates coded in. 
 
 With in the lib file, the gates are delared as follows to meet the variations due to process, temperatures and voltages.
 
-![lib3](https://user-images.githubusercontent.com/104454253/166106366-2368d29d-d79d-41e1-880d-1bfbdd4e9b2d.JPG)
+<img width="1397" alt="image" src="https://user-images.githubusercontent.com/110079648/183277476-a3cdd2aa-cefa-4704-bbc0-31ac17ebc14f.png">
 
 For the above example, for all the 32 cominations i.e 2^5 (5 is no.of variables), the delay, power and all the related parameters for each gate are mentioned.
 
-![lib4](https://user-images.githubusercontent.com/104454253/166106592-cd478c97-95de-4513-be9f-84a34fc966ca.JPG)
+<img width="1387" alt="image" src="https://user-images.githubusercontent.com/110079648/183277556-84c6cd9e-de6d-49c7-ae1a-47db7ec355a0.png">
 
 This image displays the power consumtion comparision.
 
