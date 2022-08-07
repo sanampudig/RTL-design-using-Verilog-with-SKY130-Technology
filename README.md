@@ -585,7 +585,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 
 **Optimized circuit**
 
-![opt_check](https://user-images.githubusercontent.com/104454253/166197017-cca6b780-cc9e-43b9-9c21-3c5a7f8c3947.JPG)
+<img width="1136" alt="image" src="https://user-images.githubusercontent.com/110079648/183299741-343e0f72-abf2-45b1-b31c-2159eab3744f.png">
 
 **Example-2**
 
@@ -595,7 +595,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 		assign y = a?1:b;
 	endmodule
 
-![opt_check2](https://user-images.githubusercontent.com/104454253/166197032-9cfd996e-0351-4c78-ab88-544977174f8b.JPG)
+<img width="1126" alt="image" src="https://user-images.githubusercontent.com/110079648/183299819-375d3424-07b1-46c6-b316-9bdf3f52893e.png">
 
 **Example-3**
 
@@ -605,7 +605,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 		assign y = a?(c?b:0):0;
 	endmodule
 
-![opt_check3](https://user-images.githubusercontent.com/104454253/166197047-542213e7-2c6e-4f61-b391-6beadc48022a.JPG)
+<img width="1189" alt="image" src="https://user-images.githubusercontent.com/110079648/183299877-a5460680-5619-4234-9fa2-6c3953517d4d.png">
 
 **Example-4**
 
@@ -615,7 +615,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 		assign y = a?(b?(a & c ):c):(!c);
 	endmodule
  
- ![opt_check4](https://user-images.githubusercontent.com/104454253/166197170-bbf59d4e-0457-48ce-8ad9-6d36e0c4ffbb.JPG)
+<img width="1254" alt="image" src="https://user-images.githubusercontent.com/110079648/183299977-cd7b1bf7-47c2-497e-ad64-65f81ce0984d.png">
 
 **Example- 5**
 
@@ -633,7 +633,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 		sub_module U4 (.a(n3), .b(n1) , .y(y));
 	endmodule
 
-![multiplemoduleopt2](https://user-images.githubusercontent.com/104454253/166197277-56a666ff-eae9-45e8-bff6-afcab3e8e583.JPG)
+<img width="1293" alt="image" src="https://user-images.githubusercontent.com/110079648/183300152-abd895c7-2b74-49d2-8b53-252bc1a3956c.png">
 
 **Example-6**
 
@@ -656,7 +656,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 		assign y = c | (b & n1); 
 		endmodule
 
-![multiple_moduleopt](https://user-images.githubusercontent.com/104454253/166197287-6681bdc1-ff07-4350-b16e-ae2fc1ababbe.JPG)
+<img width="1332" alt="image" src="https://user-images.githubusercontent.com/110079648/183300208-1cffdafa-cffe-4293-913a-ed5ac7eb0401.png">
 
 ### 4.2 Sequential Logic Optimization with examples
 
@@ -700,14 +700,14 @@ Here flop will be inferred as the output is not constant. <br />
 
 **Simulation**
 
-![optimdff_const1](https://user-images.githubusercontent.com/104454253/166199133-1d0a9a00-eeb4-46ab-9115-25383ec1bcbd.JPG)
+<img width="1219" alt="image" src="https://user-images.githubusercontent.com/110079648/183300412-7431eec1-87db-4ff7-8a51-117984a56e12.png">
 
 **Synthesis**<br />
 In the synthesis report, we'll see that a Dflop was inferred in this example.
 
-![opt_dff_const1synthesis](https://user-images.githubusercontent.com/104454253/166199378-0679aafd-5663-4622-a59b-04a09332db14.JPG)
+<img width="1304" alt="image" src="https://user-images.githubusercontent.com/110079648/183300468-f13b826e-61a2-46af-8880-f8c292544fda.png">
 
-![optmdff_const1report](https://user-images.githubusercontent.com/104454253/166199406-6ca38935-e5cf-4138-857b-05700d258356.JPG)
+<img width="393" alt="image" src="https://user-images.githubusercontent.com/110079648/183300511-b5c34845-071c-4e2a-b9f7-2ac0d0eaba52.png">
 
 **Example-2**<br />
 Here flop will not be inferred as the output is always high. <br />
@@ -726,13 +726,13 @@ Here flop will not be inferred as the output is always high. <br />
 
 **Simulation**
 
-![optdff_const2](https://user-images.githubusercontent.com/104454253/166199273-8728b4d5-11fc-4652-8b32-698df254856f.JPG)
+<img width="986" alt="image" src="https://user-images.githubusercontent.com/110079648/183300599-09f4f07a-62b6-4c28-9605-20647112bd3a.png">
 
 **Synthesis**
 
-![optdff_const2synthesis](https://user-images.githubusercontent.com/104454253/166199696-4bc5c938-8381-4690-9b07-b59ba407862d.JPG)
+<img width="1258" alt="image" src="https://user-images.githubusercontent.com/110079648/183300671-05de59d9-d12d-4b3a-b34c-9ac331664000.png">
 
-![optdffconst2report](https://user-images.githubusercontent.com/104454253/166199711-7a5f51df-a740-4c9c-a3ef-67d40e32c12a.JPG)
+<img width="413" alt="image" src="https://user-images.githubusercontent.com/110079648/183300676-8aaefb62-6c4c-4e67-8bc5-5453676e1074.png">
 
 **Example-3**
 
@@ -757,11 +757,11 @@ Here flop will not be inferred as the output is always high. <br />
 
 **Simulation***
 
-![gtkwavedff_const3](https://user-images.githubusercontent.com/104454253/166200122-0c960389-20b1-497c-b1be-12a084944a77.JPG)
+<img width="1112" alt="image" src="https://user-images.githubusercontent.com/110079648/183301443-d86d29e5-03fc-467a-8793-1b80551a6c68.png">
 
 **Synthesis**
 
-![optdff_const3](https://user-images.githubusercontent.com/104454253/166200223-a658f4f2-3ac0-4503-8292-298ba5e194ea.JPG)
+<img width="1329" alt="image" src="https://user-images.githubusercontent.com/110079648/183301501-089afedc-f858-4319-8ac7-d2922e58841f.png">
 
 **Example4**
 
@@ -785,11 +785,11 @@ Here flop will not be inferred as the output is always high. <br />
 
 **Simulation***
 
-![gtkwavedff_const4](https://user-images.githubusercontent.com/104454253/166200334-a0d60601-1092-49ef-8fbc-477c99210e92.JPG)
+<img width="1097" alt="image" src="https://user-images.githubusercontent.com/110079648/183301555-3dabd0c9-0649-404c-a77d-ea454e35fd21.png">
 
 **Synthesis**
 
-![optsynthdff_const4](https://user-images.githubusercontent.com/104454253/166200427-53425dc0-93f6-4137-882c-8f64d614103f.JPG)
+<img width="1310" alt="image" src="https://user-images.githubusercontent.com/110079648/183301602-b0c47a98-b828-45e1-a0b8-80d1974a37fc.png">
 
 **Example5**
 
@@ -812,11 +812,11 @@ Here flop will not be inferred as the output is always high. <br />
 
 **Simulation***
 
-![gtkwavedff_const5](https://user-images.githubusercontent.com/104454253/166200555-0ba4be08-592d-4fbd-8628-6e3a39f2999c.JPG)
+<img width="1118" alt="image" src="https://user-images.githubusercontent.com/110079648/183301643-739ba512-9a9d-4651-a247-d46ea9cea706.png">
 
 **Synthesis**
 
-![synthdff_const5](https://user-images.githubusercontent.com/104454253/166200573-6d8e2ed8-5e3f-423a-880f-f825e94ea457.JPG)
+<img width="1329" alt="image" src="https://user-images.githubusercontent.com/110079648/183301680-6a1528e8-c966-4f81-b676-a986bcd97e0e.png">
 
 ### 4.2.3 Sequential optimisation of unused outputs
 **Example1**
@@ -837,7 +837,7 @@ Here flop will not be inferred as the output is always high. <br />
 
 **Synthesis**
 
-![synthcounter_opt](https://user-images.githubusercontent.com/104454253/166201168-cadde883-f4dd-4de1-9e09-00dd5d06647c.JPG)
+<img width="1266" alt="image" src="https://user-images.githubusercontent.com/110079648/183301750-6716f80c-32a5-449a-9ed5-584df5526eab.png">
 
 **Updated counter logic-** 
 
@@ -859,7 +859,7 @@ Here flop will not be inferred as the output is always high. <br />
 
 All the other blocks in synthesizer are for incrementing the counter but the output is only from the three input NOR gate.
 
-![synthcounter_optupdated](https://user-images.githubusercontent.com/104454253/166201230-5459b740-9774-444e-b6db-ad6ccb8147ef.JPG)
+<img width="1176" alt="image" src="https://user-images.githubusercontent.com/110079648/183301840-f09fcbd5-3e75-428a-b734-d4d27c086fd4.png">
 
 # 5. DAY4- GLS, blocking vs non-blocking and Synthesis-Simulation mismatch
 
