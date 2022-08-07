@@ -446,11 +446,11 @@ To curb this drawback, we are going for flops to store the data from the cominat
 
 **Simulation**:
 
-![dffasyncreset](https://user-images.githubusercontent.com/104454253/166189496-f1a82003-1944-40f9-894c-01a91343049e.JPG)
+<img width="1399" alt="image" src="https://user-images.githubusercontent.com/110079648/183290396-885a6242-d63f-4065-b6e7-c27d5cc6ed58.png">
 
 **Synthesized circuit**:
 
-![dasyncressimulation](https://user-images.githubusercontent.com/104454253/166189644-8dc711f0-30a9-49ee-9a2b-b2370c2e6d18.JPG)
+<img width="614" alt="image" src="https://user-images.githubusercontent.com/110079648/183290710-e4d5ddb0-eda1-4858-8f1f-0e8a80a6cb60.png">
 
  **d-flipflop with asynchronous set**- Here the output **q** goes high whenever set is high and will not wait for the clock's posedge, i.e irrespective of clock, the output is changed to high.
  
@@ -467,12 +467,11 @@ To curb this drawback, we are going for flops to store the data from the cominat
 	endmodule
 
 **Simulation**:
-
-![dasynset](https://user-images.githubusercontent.com/104454253/166189676-5d8af125-e6a9-4ce2-9c17-42b4bac7f5bc.JPG)
+<img width="1064" alt="image" src="https://user-images.githubusercontent.com/110079648/183290941-cb504489-0341-44a6-af7e-f7df80e0c7ec.png">
 
 **Synthesized circuit**:
 
-![fasyncsetsynthesis](https://user-images.githubusercontent.com/104454253/166189725-579e3fcc-7031-472a-869c-4d7fe0f1fe98.JPG)
+<img width="1121" alt="image" src="https://user-images.githubusercontent.com/110079648/183291077-9da7eba5-f056-4915-92f1-4058324fc11e.png">
 
 **d-flipflop with synchronous reset**- Here the output **q** goes low whenever reset is high and at the positive edge of the clock. Here the reset of the output depends on the clock.
 
@@ -490,12 +489,11 @@ To curb this drawback, we are going for flops to store the data from the cominat
 
 **Simulation**:
 
-![dsyncres](https://user-images.githubusercontent.com/104454253/166189752-d25f1a3a-e3ee-4612-bd57-ac1cce6ceb45.JPG)
+<img width="1029" alt="image" src="https://user-images.githubusercontent.com/110079648/183291190-b8905649-4656-494f-a8c1-d3b54982e4c1.png">
 
 **Synthesized circuit**:
 
-![dsyncresetsynthesis](https://user-images.githubusercontent.com/104454253/166189803-8217d42b-ccf1-4726-b805-c716cb982009.JPG)
-
+<img width="993" alt="image" src="https://user-images.githubusercontent.com/110079648/183291417-c913ac11-7469-4b7b-b2cb-c19bdd6c0713.png">
 **d-flipflop with synchronous and asynchronbous reset**- Here the output **q** goes low whenever asynchronous reset is high where output doesn't depend on clock and also when synchronous reset is high and posedge of clock occurs.
 
 ![3c78d01e-7f60-4e51-8150-c8b2dd414957](https://user-images.githubusercontent.com/104454253/166116820-d30a6781-ee51-4fc4-83bb-55e316f992d0.jpg)
@@ -514,12 +512,11 @@ To curb this drawback, we are going for flops to store the data from the cominat
 
 **Simulation**:
 
-![dsyncasyncresJPG](https://user-images.githubusercontent.com/104454253/166189828-374865ed-59d9-417c-9946-a4eb35baa8ff.JPG)
+<img width="1173" alt="image" src="https://user-images.githubusercontent.com/110079648/183291508-57a5a2c2-993e-4245-9b38-0cb111ccebad.png">
 
 **Synthesized circuit**:
 
-![dffasyncsynceressyhtesis](https://user-images.githubusercontent.com/104454253/166189860-8b65cdee-0ae1-409b-807c-d6bf7c4d30d8.JPG)
-
+<img width="993" alt="image" src="https://user-images.githubusercontent.com/110079648/183291710-1ab1ee7f-511a-4ac2-8ca5-28fa07013262.png">
 
 ### 3.3.2 Interesting optimisations
 
