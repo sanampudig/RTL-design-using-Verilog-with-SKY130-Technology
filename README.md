@@ -530,7 +530,7 @@ This lab session deals with some automatic and interesting optimisations of the 
 
 **Synthesized circuit**:
 
-![mult2](https://user-images.githubusercontent.com/104454253/166121029-b478d2bc-145a-40ad-9307-c7006fe0320a.JPG)
+<img width="943" alt="image" src="https://user-images.githubusercontent.com/110079648/183298732-209b9f9e-26f1-4cd7-aed5-2b553c8aafd8.png">
 
 When it comes to multiplying with powers of 2, it just needs shifting as shown in the below image:
 
@@ -538,7 +538,7 @@ When it comes to multiplying with powers of 2, it just needs shifting as shown i
 
 **Netlist for the above schematic**
 
-![mult2netlist](https://user-images.githubusercontent.com/104454253/166121272-723a7aff-dc3e-455d-b623-34d90c8a6508.JPG)
+<img width="896" alt="image" src="https://user-images.githubusercontent.com/110079648/183298792-63868767-65e4-432c-b92a-01bc5f95473f.png">
 
 Special case of multiplying **a** with **9**. The result is shown in the below image:
 
@@ -546,11 +546,11 @@ Special case of multiplying **a** with **9**. The result is shown in the below i
 
 The schematic for the same is shown below:
 
-![mult9](https://user-images.githubusercontent.com/104454253/166121402-86c8ab0a-f8dc-490c-bd68-3a97ac53970d.JPG)
+<img width="1141" alt="image" src="https://user-images.githubusercontent.com/110079648/183298941-6fea62bb-a835-4eec-b830-ed2f90ac509e.png">
 
 **Netlist for the above schematic**
 
-![mult8netlist](https://user-images.githubusercontent.com/104454253/166121455-11f0dee0-cc32-4438-8797-43853aa2bc07.JPG)
+<img width="755" alt="image" src="https://user-images.githubusercontent.com/110079648/183299298-ae04036f-9c51-4958-9406-0557510a7f0c.png">
 
 # 4. Day3- Combinational and sequential optmizations
 
