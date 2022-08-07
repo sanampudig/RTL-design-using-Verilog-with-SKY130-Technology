@@ -1067,11 +1067,11 @@ This incomplete if construct forms a connection between i0 and output y i.e, D-l
 
 **Simulation**
 
-![simulationincomif](https://user-images.githubusercontent.com/104454253/166212734-9af50022-ebdd-4546-9227-25a35759d8f6.JPG)
+<img width="1385" alt="image" src="https://user-images.githubusercontent.com/110079648/183303149-dc9fc4f9-7bf5-4896-9519-f4c83ed8d0e5.png">
 
 **Synthesis**
 
-![sythesisincomp_if](https://user-images.githubusercontent.com/104454253/166212767-d60021fa-9102-4edb-83c7-cd87b3439f24.JPG)
+<img width="1394" alt="image" src="https://user-images.githubusercontent.com/110079648/183303227-f71bfd6f-c5eb-4058-9283-87b429e8bd9d.png">
 
 **Example-2**<br />
 The below code is equivalent to two 2:1 mux with i0 and i2 as select lines with i1 and i3 as inputs respectively. Here as well, the output is connected back to input in the form of a latch with an enable input of **OR** of i0 and i2.
@@ -1088,11 +1088,11 @@ The below code is equivalent to two 2:1 mux with i0 and i2 as select lines with 
 
 **Simulation**
 
-![gtkwaveincomp_if2](https://user-images.githubusercontent.com/104454253/166212933-520affd3-c367-4bbf-8ffc-14d30ca05ebe.JPG)
+<img width="1380" alt="image" src="https://user-images.githubusercontent.com/110079648/183303275-fecafb40-7a62-4f86-8454-98ff6f849c36.png">
 
 **Synthesis**
 
-![synthesisincomp_if2](https://user-images.githubusercontent.com/104454253/166212941-6ca8d979-1e4b-4ae1-b5f2-a74a229f5629.JPG)
+<img width="1387" alt="image" src="https://user-images.githubusercontent.com/110079648/183303313-224b2748-24c0-41b6-baa6-e419fa7a9354.png">
 
 ## 6.3 Lab- incomplete overlapping Case
 
@@ -1111,11 +1111,11 @@ Thie is an example of incomplete case where other two combinations 10 and 11 wer
 
 **Simulator**
 
-![simulationincomp_case](https://user-images.githubusercontent.com/104454253/166213607-d8de1148-7963-45b9-88fc-46531de026ce.JPG)
+<img width="1395" alt="image" src="https://user-images.githubusercontent.com/110079648/183303376-5d940333-017c-4103-a2d9-d396e067bd00.png">
 
 **Synthesis**
 
-![synthesisincom_Case](https://user-images.githubusercontent.com/104454253/166213609-c8221a76-2bc7-4ef6-b519-e76d5ee7211a.JPG)
+<img width="1399" alt="image" src="https://user-images.githubusercontent.com/110079648/183303438-58278163-7b65-459b-82fb-402fbe1ad0d0.png">
 
 **Example-2- Complete case**
 
@@ -1134,11 +1134,11 @@ This is the case of complete case statements as the default case is given. If th
 
 **Simulation**
 
-![simulationcomp_case](https://user-images.githubusercontent.com/104454253/166213705-5443daf5-2996-46e3-900a-c0991edb1fb0.JPG)
+<img width="1397" alt="image" src="https://user-images.githubusercontent.com/110079648/183303481-2efa5580-ee52-489d-a95a-10173590c1b1.png">
 
 **Synthesis**
 
-![synthesiscomp_case](https://user-images.githubusercontent.com/104454253/166213716-d37ad0f3-f111-4bd5-bf73-c77558a48909.JPG)
+<img width="1404" alt="image" src="https://user-images.githubusercontent.com/110079648/183303516-405881a4-15a5-440f-8edc-bd224a6eba2f.png">
 
 **Example-3**<br />
 In the below example, y is present in all the case statements and it had particular outut for all cases. There no latch is inferred in case of y. 
@@ -1163,11 +1163,11 @@ When it comes to x, it is not assigned for the input 01, therefore a latch is in
 
 **Simulation**
 
-![simulationpartialcaseassign](https://user-images.githubusercontent.com/104454253/166214052-38f2b8ff-af9e-445a-be5e-699021c7a3ef.JPG)
+<img width="1348" alt="image" src="https://user-images.githubusercontent.com/110079648/183303554-40076c39-8ff8-47ab-816e-bfe2beacd549.png">
 
 **Synthesis**
 
-![synthesispartial_case_assign](https://user-images.githubusercontent.com/104454253/166214065-30f2cab1-a8c3-4c6b-92c4-c7b9728ca399.JPG)
+<img width="1384" alt="image" src="https://user-images.githubusercontent.com/110079648/183304002-883bbfd3-338a-45ab-9c7b-051e0a879a91.png">
 
 **Example-4-Bad case construct**
 
@@ -1186,15 +1186,15 @@ When it comes to x, it is not assigned for the input 01, therefore a latch is in
 	
 **Simulation**
 
-![simulationbad_case](https://user-images.githubusercontent.com/104454253/166214296-1423f7e9-9e53-46ae-9f2d-5ca7d8d364d4.JPG)
+<img width="1360" alt="image" src="https://user-images.githubusercontent.com/110079648/183304053-250d43fc-749f-44c3-bd5f-104ada1046a6.png">
 
 **Synthesis**
 
-![synthesisbad_case](https://user-images.githubusercontent.com/104454253/166214308-b4232ff5-300c-426d-9a58-e612a90cfd77.JPG)
+<img width="1364" alt="image" src="https://user-images.githubusercontent.com/110079648/183304095-2f92a1d8-a79f-4f78-9b0c-8772df3be2a0.png">
 
 **Netlist simulation**
 
-![simulationbad_case_netlist](https://user-images.githubusercontent.com/104454253/166214909-3c04f425-ea44-4456-8c76-7b81b236b86a.JPG)
+<img width="1390" alt="image" src="https://user-images.githubusercontent.com/110079648/183304172-0766b521-2808-434e-b6f4-afb066ef99b3.png">
 
 ## 6.4 For Loop and For Generate
 
@@ -1230,15 +1230,15 @@ Here for loop is used to design a 4:1 mux. This can also be written using case o
 
 **Simulation**
 
-![simulation_mux_generate](https://user-images.githubusercontent.com/104454253/166215022-1f6a3eff-2d8f-445d-9791-1fa84d997325.JPG)
+!<img width="1378" alt="image" src="https://user-images.githubusercontent.com/110079648/183304233-a13a8370-53b7-4994-bc44-e41795c6f2ec.png">
 
 **Synthesis**
 
-![synthesis_mux_generate](https://user-images.githubusercontent.com/104454253/166215028-2f33e2ac-5094-42e0-b765-1a69da3d7eb9.JPG)
+<img width="1239" alt="image" src="https://user-images.githubusercontent.com/110079648/183304295-b8f3c404-805a-41c2-8399-f54ca919dad9.png">
 
 **Netlist Simulation**
 
-![simulation_mux_generate_netlist](https://user-images.githubusercontent.com/104454253/166215037-7c6da2c4-65fd-4ec9-915b-6d02b9df515f.JPG)
+<img width="1381" alt="image" src="https://user-images.githubusercontent.com/110079648/183304437-6909c1a4-1afc-41e2-aeba-46d3d4a40c9c.png">
 
 **Example-2-Demux using Case**
 
