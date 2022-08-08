@@ -1272,6 +1272,9 @@ Here for loop is used to design a 4:1 mux. This can also be written using case o
 
 **Netlist Simulation**
 
+<img width="1397" alt="image" src="https://user-images.githubusercontent.com/110079648/183326337-5414c1e9-fe58-4f62-8ac6-16951d8903d4.png">
+
+
 **Example-3-Demux using Generate**
 
 The code in above example is big and also there is a chance of human error wile writing the code. However, using for loop as shown below, this drawback can be elimiated to a great extent.
@@ -1292,11 +1295,16 @@ The code in above example is big and also there is a chance of human error wile 
 
 **Simulation**
 
-<img width="1402" alt="image" src="https://user-images.githubusercontent.com/110079648/183325180-9a64cfcb-1cd2-4b7d-9de6-de006182bcb5.png">
+<img width="1393" alt="image" src="https://user-images.githubusercontent.com/110079648/183326508-ce2b8e9f-b897-40b7-9d83-ecc37527035e.png">
 
 **Synthesis**
 
-<img width="1327" alt="image" src="https://user-images.githubusercontent.com/110079648/183325328-a5805425-926f-49be-a65c-753eb5cc399a.png">
+<img width="1355" alt="image" src="https://user-images.githubusercontent.com/110079648/183326640-05500b7f-984f-4289-bab7-41442981ed1c.png">
+
+**Netlist Simulation**
+
+<img width="1404" alt="image" src="https://user-images.githubusercontent.com/110079648/183326840-e8e0a413-b846-4296-b4e1-728d88d78be6.png">
+
 
 **Example-4- Ripple carry adder using fulladder**
 
@@ -1325,15 +1333,15 @@ In this Ripple carry adder example, unlike instantiating fulladder for 8 times, 
 
 **Simulation**
 
-![sim_rca](https://user-images.githubusercontent.com/104454253/166215641-bb752eb7-9709-4c0a-a6b7-cce9cb585097.JPG)
+<img width="1399" alt="image" src="https://user-images.githubusercontent.com/110079648/183327027-71ee2742-c1d3-4131-b3f6-7bbeba082eab.png">
 
 **Synthesis**
 
-![synth_rca](https://user-images.githubusercontent.com/104454253/166215658-dc566124-519d-477d-8e4a-7b990b40c191.JPG)
+<img width="1323" alt="image" src="https://user-images.githubusercontent.com/110079648/183327385-9bde3a73-6c32-48f7-9408-73cc7f7296df.png">
 
 **Netlist Simulation**
 
-![sim_rca_netlist](https://user-images.githubusercontent.com/104454253/166215690-7afb3dc5-9890-42b7-acd7-cc31b336f6e3.JPG)
+<img width="1394" alt="image" src="https://user-images.githubusercontent.com/110079648/183327762-bfedcb42-0d4a-4839-9556-8b8e39357dc2.png">
 
 # 7. Word of Thanks
 
