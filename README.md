@@ -1292,11 +1292,11 @@ The code in above example is big and also there is a chance of human error wile 
 
 **Simulation**
 
-![simulationdemux_generate](https://user-images.githubusercontent.com/104454253/166215467-b947a96a-cce8-4dab-b551-8d05109bfc7c.JPG)
+<img width="1402" alt="image" src="https://user-images.githubusercontent.com/110079648/183325180-9a64cfcb-1cd2-4b7d-9de6-de006182bcb5.png">
 
 **Synthesis**
 
-![synthdemux_generate](https://user-images.githubusercontent.com/104454253/166215477-0cb58974-29e0-42ae-adf9-c96e1addefb5.JPG)
+<img width="1327" alt="image" src="https://user-images.githubusercontent.com/110079648/183325328-a5805425-926f-49be-a65c-753eb5cc399a.png">
 
 **Example-4- Ripple carry adder using fulladder**
 
