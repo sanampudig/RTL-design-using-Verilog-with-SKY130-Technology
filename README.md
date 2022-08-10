@@ -1344,5 +1344,5 @@ In this Ripple carry adder example, unlike instantiating fulladder for 8 times, 
 <img width="1394" alt="image" src="https://user-images.githubusercontent.com/110079648/183327762-bfedcb42-0d4a-4839-9556-8b8e39357dc2.png">
 
 # 7. Word of Thanks
+I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to complete this flow smoothly.
 
-I would like to thanks the team of VLSI System Design and Chipspirit for the collaborative workshop. The sessions are well structure and I'm looking forward for future events. My special thanks to Mr. Kunal and Mr. Shon Taware for helping us out with the flow and technical issues. I wish VSD team and Chipspirit team all the very best for your **MAKE IN INDIA** vision.
