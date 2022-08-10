@@ -587,7 +587,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 
 **Example-2**
 
-![e748028c-ea3d-4d58-8f5a-71a8248e4dd5](https://user-images.githubusercontent.com/104454253/166292286-6b3fd349-23af-463e-988e-863038a542d8.jpg)
+
 
 	module opt_check2 (input a , input b , output y);
 		assign y = a?1:b;
@@ -597,7 +597,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 
 **Example-3**
 
-![bfcc0b60-1b3e-4f45-a5cf-88b33f4e7dcf](https://user-images.githubusercontent.com/104454253/166292243-7fa03ef2-bce9-418f-8830-e9587d459aef.jpg)
+
 
 	module opt_check3 (input a , input b, input c , output y);
 		assign y = a?(c?b:0):0;
@@ -607,7 +607,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 
 **Example-4**
 
-![a42e5eb3-2966-4fb0-bad3-6c6a6fa12798](https://user-images.githubusercontent.com/104454253/166292378-3ebdc824-de41-4385-9f7f-1654e71c0ff0.jpg)
+
 
 	module opt_check4 (input a , input b , input c , output y);
 		assign y = a?(b?(a & c ):c):(!c);
@@ -617,7 +617,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 
 **Example- 5**
 
-![7c0faa7e-cffc-44f3-988a-17e2e4857675](https://user-images.githubusercontent.com/104454253/166292469-dea41b7c-40ed-4b5b-b9f7-30ad3de0bad2.jpg)
+
 
 	module sub_module(input a , input b , output y);
 		assign y = a & b;
@@ -635,7 +635,7 @@ Command to optimize the circuit by yosys is **yosys> opt_clean -purge**
 
 **Example-6**
 
-![89cc6397-defe-4bba-a767-6e28c99ba0de](https://user-images.githubusercontent.com/104454253/166292486-d2041066-ab26-4010-b253-93c510c51674.jpg)
+
 
 		module sub_module1(input a , input b , output y);
 		 assign y = a & b;
@@ -670,9 +670,9 @@ Below are the various techniques used for sequential logic optimisations:<br />
 
 **Sequential contant propagation**- Here only the first logic can be optimized as the output of flop is always zero. However for the second flop, the output changes continuously, therefor it cannot be used for contant propagation.
 
-![1e34f504-64e1-411d-a668-5294c6ea78f5](https://user-images.githubusercontent.com/104454253/166128292-7faf6384-792a-4455-a847-350bb95b631f.jpg)
+![telegram-cloud-photo-size-5-6314223892675276922-y](https://user-images.githubusercontent.com/110079648/183978891-36f71300-ce08-4447-912d-ff23b5a9259a.jpg)
 
-![6ef09bec-38c3-4a13-901b-0221461c9aca](https://user-images.githubusercontent.com/104454253/166128295-40ddcdda-9b4e-4a0f-a27e-5c5bd9a8bb3e.jpg)
+
 
 #### 4.2.2. Advanced
 **State Optimisation**: This is optimisation of unused state. Using this technique we can come up with most optimised state machine.
@@ -694,7 +694,7 @@ Here flop will be inferred as the output is not constant. <br />
 		end
 	endmodule
 
-![bdf6fb4e-ee93-4f76-bbef-e25a8fe8aeda](https://user-images.githubusercontent.com/104454253/166292590-1d76f35e-f83f-486e-a154-1e0a7a1441fb.jpg)
+
 
 **Simulation**
 
@@ -720,7 +720,7 @@ Here flop will not be inferred as the output is always high. <br />
 		end
 	endmodule
 
-![7a01ae65-de9b-4e33-812e-206eb3c2733f](https://user-images.githubusercontent.com/104454253/166292615-3af99c64-305e-434a-b21b-907a30f83ab0.jpg)
+
 
 **Simulation**
 
@@ -831,7 +831,7 @@ Here flop will not be inferred as the output is always high. <br />
 		end
 		endmodule
 		
-![2f8f6e43-102f-4fd7-aad2-585b0a55098d](https://user-images.githubusercontent.com/104454253/166292769-44c0406c-4fbb-4a3e-9345-2b308783a7de.jpg)
+
 
 **Synthesis**
 
@@ -851,7 +851,7 @@ Here flop will not be inferred as the output is always high. <br />
 		end
 	endmodule
 
-![0e890967-cf43-4be0-8f53-968fe98c7f55](https://user-images.githubusercontent.com/104454253/166292799-97d7ee9c-1000-4dcc-935c-a5ae56a74f8e.jpg)
+
 
 **Synthesis**
 
@@ -1027,7 +1027,7 @@ When an incomplete construct is used, if all the conditions are failed, the inpu
 
 This can be shown in below example:
 
-![0ed60c6c-b272-4bc6-939b-df13f76fc063](https://user-images.githubusercontent.com/104454253/166262011-21800dd6-0427-4558-a75e-6bf928117bba.jpg)
+![telegram-cloud-photo-size-5-6314223892675276920-y](https://user-images.githubusercontent.com/110079648/183977733-7c117d11-c336-451b-831e-1d09b3ced053.jpg)
 
 ### 6.1.2 Case construct
 
