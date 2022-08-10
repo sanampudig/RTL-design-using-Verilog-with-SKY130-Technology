@@ -274,7 +274,7 @@ Below image is the delay order for the different flavor of gates.
 
 This is the schematic as per the connections in the above module.
 
-![94d6174a-bcb0-4cad-bef6-a0537ef32ef1](https://user-images.githubusercontent.com/104454253/166108402-f96b7fa9-3d8f-4f05-b4cb-89e443e43718.jpg)
+![telegram-cloud-photo-size-5-6314223892675276833-y](https://user-images.githubusercontent.com/110079648/183962587-1dde8169-5e72-43b6-920b-f488ee000e44.jpg)
 
 However, the yosys synthesizer generates the following schematic instead of the above one and with in the submodules, the connections are made
 ```
@@ -431,7 +431,7 @@ To curb this drawback, we are going for flops to store the data from the cominat
  
  **d-flipflop with asynchronous reset**- Here the output **q** goes low whenever reset is high and will not wait for the clock's posedge, i.e irrespective of clock, the output is changed to low.
  
- ![f143804e-5d1a-49d1-9b00-9227785d3e29](https://user-images.githubusercontent.com/104454253/166116145-8fbbacb1-e453-465a-9e41-f21de2337190.jpg)<br />
+![telegram-cloud-photo-size-5-6314223892675276834-y](https://user-images.githubusercontent.com/110079648/183966438-05a31060-6a35-44dc-8717-1a0f76fe4c3e.jpg)
  
 	 module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
 		always @ (posedge clk , posedge async_reset)
@@ -453,7 +453,6 @@ To curb this drawback, we are going for flops to store the data from the cominat
 
  **d-flipflop with asynchronous set**- Here the output **q** goes high whenever set is high and will not wait for the clock's posedge, i.e irrespective of clock, the output is changed to high.
  
-![ecc23aa6-e840-46bd-84e3-4eb2b6db0eee](https://user-images.githubusercontent.com/104454253/166116302-08fbdab3-58b3-4ab1-b793-5de48ac86146.jpg)
 
 	module dff_async_set ( input clk ,  input async_set , input d , output reg q );
 		always @ (posedge clk , posedge async_set)
@@ -474,7 +473,7 @@ To curb this drawback, we are going for flops to store the data from the cominat
 
 **d-flipflop with synchronous reset**- Here the output **q** goes low whenever reset is high and at the positive edge of the clock. Here the reset of the output depends on the clock.
 
-![433468fc-7853-49be-8e81-45fd23297c6c](https://user-images.githubusercontent.com/104454253/166116449-152fffef-c1f5-492b-9101-9a0d431b8a88.jpg)
+
 
 	module dff_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
 		always @ (posedge clk )
@@ -495,7 +494,7 @@ To curb this drawback, we are going for flops to store the data from the cominat
 <img width="993" alt="image" src="https://user-images.githubusercontent.com/110079648/183291417-c913ac11-7469-4b7b-b2cb-c19bdd6c0713.png">
 **d-flipflop with synchronous and asynchronbous reset**- Here the output **q** goes low whenever asynchronous reset is high where output doesn't depend on clock and also when synchronous reset is high and posedge of clock occurs.
 
-![3c78d01e-7f60-4e51-8150-c8b2dd414957](https://user-images.githubusercontent.com/104454253/166116820-d30a6781-ee51-4fc4-83bb-55e316f992d0.jpg)
+![telegram-cloud-photo-size-5-6314223892675276906-y](https://user-images.githubusercontent.com/110079648/183970239-3f159d5c-5802-43df-849a-0d6d2daa901a.jpg)
 
 	module dff_asyncres_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
 		always @ (posedge clk , posedge async_reset)
@@ -525,7 +524,7 @@ This lab session deals with some automatic and interesting optimisations of the 
 		assign y = a * 2;
 	endmodule
 
-![8e686520-9e94-4c61-b8cf-6ac376a519c9](https://user-images.githubusercontent.com/104454253/166120664-44f5cd53-02bb-4457-bdb4-e8e02f0f64e4.jpg)
+![telegram-cloud-photo-size-5-6314223892675276908-y](https://user-images.githubusercontent.com/110079648/183971707-8f04b9d0-2ef9-4160-ad44-12981cc97add.jpg)
 
 **Synthesized circuit**:
 
@@ -533,7 +532,7 @@ This lab session deals with some automatic and interesting optimisations of the 
 
 When it comes to multiplying with powers of 2, it just needs shifting as shown in the below image:
 
-![1781ff88-add9-4b73-b8ec-51257e3074f2](https://user-images.githubusercontent.com/104454253/166120876-1cbc110d-2760-4ab3-9199-7aae4ba2dffb.jpg)
+![telegram-cloud-photo-size-5-6314223892675276910-y](https://user-images.githubusercontent.com/110079648/183974153-5c183b58-2eba-4ea1-8bd5-6a792f994d17.jpg)
 
 **Netlist for the above schematic**
 
@@ -541,7 +540,6 @@ When it comes to multiplying with powers of 2, it just needs shifting as shown i
 
 Special case of multiplying **a** with **9**. The result is shown in the below image:
 
-![24c130d3-f95b-4d89-a280-4089cf9839ef](https://user-images.githubusercontent.com/104454253/166121185-a63f798f-2eb2-4510-a589-722f75424bd1.jpg)
 
 The schematic for the same is shown below:
 
