@@ -1344,3 +1344,10 @@ In this Ripple carry adder example, unlike instantiating fulladder for 8 times, 
 # 7. Word of Thanks
 I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to complete this flow smoothly.
 
+# Acknowledgment
+
+
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Madhav Rao, Associate Professor, IIIT Bangalore
+- V N Muralidhara, Associate Professor, IIIT Bangalore
+
